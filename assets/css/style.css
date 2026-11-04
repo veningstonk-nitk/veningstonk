@@ -155,3 +155,8 @@ address{font-style:normal;margin-bottom:1rem}
   .block{grid-template-columns:1fr;gap:.5rem}
   .block>h2{position:static}
 }
+
+.timeline li[hidden]{display:none}
+.kind{font:600 .72rem var(--sans);color:var(--teal);text-transform:none;border:1px solid var(--line);border-radius:99px;padding:.05rem .5rem;margin-right:.35rem;white-space:nowrap}
+.talks .what{display:block}
+button.btn{cursor:pointer}

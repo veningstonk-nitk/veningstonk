@@ -1,11 +1,15 @@
 /* Edit this block only. Leave a value empty ("") to hide that link. */
 var SITE = {
-  email: "",          // e.g. "veningston@nitk.edu.in" (add once your NITK address is issued)
-  scholarUrl: "",     // Google Scholar profile URL
-  scopusUrl: "",      // Scopus author URL
-  githubUrl: "",      // https://github.com/<username>
-  linkedinUrl: "",
-  departmentUrl: ""   // NITK CSE department page
+  email: "veningstonk@nitk.edu.in",
+  scholarUrl: "https://scholar.google.co.in/citations?user=Xpx5ZXoAAAAJ&hl=en",
+  scopusUrl: "https://www.scopus.com/authid/detail.uri?authorId=46161708100",
+  rid: "http://www.researcherid.com/rid/N-7942-2016",
+  s2: "https://www.semanticscholar.org/author/K.-Veningston/3174376",
+  dblp: "https://dblp.org/pid/155/5809.html",
+  openreview: "https://openreview.net/profile?id=%7EVENINGSTON_K1",
+  githubUrl: "https://github.com/veningstonk-nitk",
+  linkedinUrl: "https://www.linkedin.com/in/veningston-k-87bba04a/",
+  departmentUrl: ""   // add the NITK CSE department page URL here
 };
 
 (function () {
@@ -22,9 +26,6 @@ var SITE = {
   if (SITE.email) {
     var a = document.getElementById("email-link");
     a.href = "mailto:" + SITE.email;
-    a.textContent = SITE.email.replace("@", " [at] ").replace(/\./g, " [dot] ");
-    a.textContent = SITE.email;
-    document.getElementById("email-line").hidden = false;
   }
 
   /* publication filter and search */
@@ -33,22 +34,36 @@ var SITE = {
     var items = Array.prototype.slice.call(list.children);
     var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
     var q = document.getElementById("q"), cnt = document.getElementById("count");
-    var active = {};
+    var active = "all";
     var apply = function () {
-      var term = q.value.trim().toLowerCase(), any = Object.keys(active).length > 0, n = 0;
+      var term = q.value.trim().toLowerCase(), n = 0;
       items.forEach(function (li) {
-        var ok = (!any || active[li.getAttribute("data-type")]) && (!term || li.textContent.toLowerCase().indexOf(term) > -1);
+        var ok = (active === "all" || li.getAttribute("data-type") === active) && (!term || li.textContent.toLowerCase().indexOf(term) > -1);
         li.hidden = !ok; if (ok) n++;
       });
-      cnt.textContent = "Showing " + n + " of " + items.length + " items";
+      cnt.textContent = "Showing " + n + (active === "all" ? " of " + items.length + " items" : " item" + (n === 1 ? "" : "s"));
     };
     chips.forEach(function (c) {
       c.addEventListener("click", function () {
-        var f = c.getAttribute("data-f"), on = c.getAttribute("aria-pressed") !== "true";
-        c.setAttribute("aria-pressed", on); if (on) active[f] = 1; else delete active[f]; apply();
+        active = c.getAttribute("data-f");
+        chips.forEach(function (x) { x.setAttribute("aria-pressed", x === c ? "true" : "false"); });
+        apply();
       });
     });
     q.addEventListener("input", apply); apply();
+  }
+
+  /* talks: show more */
+  var tt = document.getElementById("talk-toggle");
+  if (tt) {
+    var more = document.querySelectorAll("#talklist li.more");
+    tt.textContent = "Show all " + (more.length + 12) + " talks";
+    tt.addEventListener("click", function () {
+      var open = tt.getAttribute("aria-expanded") !== "true";
+      more.forEach(function (li) { li.hidden = !open; });
+      tt.setAttribute("aria-expanded", open);
+      tt.textContent = open ? "Show fewer" : "Show all " + (more.length + 12) + " talks";
+    });
   }
 
   /* highlight current section in nav */
