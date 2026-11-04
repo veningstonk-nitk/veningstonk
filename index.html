@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. K. Veningston | Assistant Professor, CSE, NITK Surathkal</title>
+  <meta name="description" content="Dr. K. Veningston, Assistant Professor in Computer Science and Engineering at NITK Surathkal. Research on on-device AI and model compression for UAV vision, language models, healthcare AI and graph learning.">
+  <meta name="author" content="K. Veningston">
+  <meta name="theme-color" content="#124C61">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Dr. K. Veningston, NITK Surathkal">
+  <meta property="og:description" content="AI models small enough to run on a drone, applied to plastic pollution, maternal health and drug safety.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23124C61'/%3E%3Cpath d='M7 22 L13 10 L19 20 L22 15 L26 22 Z' fill='%23F6F8F8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "K. Veningston",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "Assistant Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "National Institute of Technology Karnataka, Surathkal"
+    },
+    "sameAs": ["https://orcid.org/0000-0002-8060-5450"],
+    "knowsAbout": ["Model compression", "On-device AI", "Computer vision", "Natural language processing", "Federated learning", "Graph neural networks"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="layout">
+    <aside class="side" aria-label="Profile and navigation">
+      <div class="side-inner">
+        <div class="portrait" id="portrait">
+          <img src="assets/img/profile.jpg" alt="Portrait of Dr. K. Veningston" width="132" height="132" onerror="this.remove()">
+          <span class="monogram" aria-hidden="true">KV</span>
+        </div>
+        <h1 class="name">Dr. K. Veningston</h1>
+        <p class="role">Assistant Professor</p>
+        <p class="affil">
+          Department of Computer Science and Engineering<br>
+          National Institute of Technology Karnataka, Surathkal<br>
+          Mangaluru, Karnataka
+        </p>
+
+        <nav class="nav" aria-label="Sections">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#group">Students</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <ul class="ext" aria-label="Profiles">
+          <li><a href="https://orcid.org/0000-0002-8060-5450" rel="me noopener">ORCID</a></li>
+          <li data-site="scholarUrl" hidden><a rel="me noopener">Google Scholar</a></li>
+          <li data-site="scopusUrl" hidden><a rel="me noopener">Scopus</a></li>
+          <li data-site="githubUrl" hidden><a rel="me noopener">GitHub</a></li>
+          <li data-site="linkedinUrl" hidden><a rel="me noopener">LinkedIn</a></li>
+          <li data-site="departmentUrl" hidden><a rel="noopener">Department page</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main id="main" class="content">
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <h2 id="hero-title" class="hero-title">AI models small enough to fly on a drone, used on problems that matter close to home.</h2>
+        <p class="hero-sub">My group compresses and deploys deep learning models on drone and microcontroller hardware, and applies them to floating plastic in lakes and coasts, fetal ultrasound, and drug safety.</p>
+
+        <figure class="aerial">
+          <svg viewBox="0 0 640 380" role="img" aria-labelledby="aerial-t aerial-d" xmlns="http://www.w3.org/2000/svg">
+            <title id="aerial-t">Illustration of drone-based plastic detection on a lake</title>
+            <desc id="aerial-d">A stylised aerial view of a lake with patches of floating plastic, each outlined by a detection box and labelled with a confidence score.</desc>
+            <defs>
+              <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--w1)"/>
+                <stop offset="1" stop-color="var(--w2)"/>
+              </linearGradient>
+              <clipPath id="lakeClip">
+                <path d="M70 120 C 110 52, 230 36, 330 58 C 430 78, 540 60, 585 128 C 622 190, 590 262, 520 300 C 440 344, 330 334, 240 322 C 150 310, 52 280, 40 210 C 34 172, 46 150, 70 120 Z"/>
+              </clipPath>
+            </defs>
+
+            <rect width="640" height="380" fill="var(--land)"/>
+            <g class="land-marks" stroke="var(--land-line)" stroke-width="1" fill="none" opacity=".55">
+              <path d="M0 40 C 80 30, 140 50, 210 24 S 330 8, 420 28 S 560 20, 640 34"/>
+              <path d="M0 352 C 90 340, 170 366, 260 350 S 420 358, 520 346 S 600 350, 640 344"/>
+              <path d="M14 96 L 60 88 M10 250 L 48 262 M600 90 L 632 98 M606 256 L 636 246"/>
+            </g>
+
+            <path d="M70 120 C 110 52, 230 36, 330 58 C 430 78, 540 60, 585 128 C 622 190, 590 262, 520 300 C 440 344, 330 334, 240 322 C 150 310, 52 280, 40 210 C 34 172, 46 150, 70 120 Z" fill="url(#water)" stroke="var(--shore)" stroke-width="3"/>
+
+            <g clip-path="url(#lakeClip)" stroke="var(--ripple)" stroke-width="1" fill="none" opacity=".5">
+              <path d="M30 100 C 120 90, 200 112, 290 96 S 470 84, 640 108"/>
+              <path d="M30 150 C 120 140, 220 166, 320 148 S 500 140, 640 158"/>
+              <path d="M30 200 C 130 190, 210 216, 310 198 S 490 192, 640 208"/>
+              <path d="M30 250 C 130 242, 220 266, 320 250 S 500 244, 640 260"/>
+              <path d="M30 300 C 130 292, 220 314, 320 300 S 500 296, 640 310"/>
+            </g>
+
+            <!-- island / houseboat cluster -->
+            <g fill="var(--land)" stroke="var(--shore)" stroke-width="2">
+              <ellipse cx="410" cy="232" rx="34" ry="16"/>
+              <ellipse cx="438" cy="240" rx="14" ry="8"/>
+            </g>
+
+            <!-- plastic patches -->
+            <g class="plastic" fill="var(--plastic)">
+              <path d="M150 176 l12 -8 l14 4 l8 12 l-6 12 l-16 4 l-14 -8 z"/>
+              <path d="M172 214 l8 -4 l8 4 l-2 8 l-10 2 z"/>
+              <path d="M262 132 l10 -6 l12 2 l6 10 l-8 10 l-14 0 l-6 -8 z"/>
+              <path d="M286 160 l6 -3 l7 3 l-2 7 l-9 1 z"/>
+              <path d="M356 250 l14 -8 l16 4 l6 14 l-10 12 l-18 2 l-12 -10 z"/>
+              <path d="M520 168 l10 -6 l12 4 l4 12 l-10 8 l-14 -2 z"/>
+              <path d="M96 238 l8 -5 l10 3 l3 9 l-8 6 l-11 -2 z"/>
+            </g>
+
+            <!-- detection boxes: drawn once on load -->
+            <g class="boxes" fill="none" stroke="var(--box)" stroke-width="1.6">
+              <rect pathLength="100" x="142" y="162" width="52" height="46" />
+              <rect pathLength="100" x="164" y="204" width="32" height="24" />
+              <rect pathLength="100" x="252" y="120" width="48" height="42" />
+              <rect pathLength="100" x="278" y="150" width="28" height="22" />
+              <rect pathLength="100" x="346" y="234" width="56" height="46" />
+              <rect pathLength="100" x="510" y="156" width="46" height="38" />
+              <rect pathLength="100" x="88" y="226" width="40" height="32" />
+            </g>
+            <g class="labels" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="10.5" font-weight="600" fill="var(--box-label)">
+              <text x="142" y="157">plastic 0.94</text>
+              <text x="164" y="199">0.88</text>
+              <text x="252" y="115">plastic 0.91</text>
+              <text x="278" y="145">0.79</text>
+              <text x="346" y="229">plastic 0.96</text>
+              <text x="510" y="151">plastic 0.87</text>
+              <text x="88" y="221">0.83</text>
+            </g>
+
+            <!-- survey track -->
+            <path d="M560 340 C 500 300, 430 330, 360 300 S 220 270, 120 296" fill="none" stroke="var(--box-label)" stroke-width="1.4" stroke-dasharray="3 6" opacity=".7"/>
+            <g transform="translate(560 340)">
+              <circle r="9" fill="var(--paper)" stroke="var(--box-label)" stroke-width="1.6"/>
+              <path d="M-14 -14 L14 14 M14 -14 L-14 14" stroke="var(--box-label)" stroke-width="1.6" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <figcaption>Illustration of the task: a drone flies a survey track, and a compact model outlines floating plastic and scores each detection. Not real imagery.</figcaption>
+        </figure>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="block" aria-labelledby="h-about">
+        <h2 id="h-about">About</h2>
+        <p>I am an Assistant Professor in the Department of Computer Science and Engineering at NITK Surathkal, where I joined in October 2026. Before this I was at NIT Srinagar (2021 to 2026), at Madanapalle Institute of Technology and Science as Associate Professor and later Professor (2015 to 2021), and at Karunya Institute of Technology and Sciences. I completed my Ph.D. at Anna University, Chennai, on personalised information retrieval, supported by a DST INSPIRE Fellowship.</p>
+        <p>My work sits where model design meets deployment. I am interested in how far a deep network can be shrunk through quantisation, pruning and careful architecture choices before it stops being useful, and in what that makes possible on a drone, a microcontroller or a clinic laptop. The applications I return to are environmental monitoring, maternal and fetal health, and the safety of medicines.</p>
+
+        <dl class="facts">
+          <div><dt>Experience after Ph.D.</dt><dd>11 years</dd></div>
+          <div><dt>Journal papers</dt><dd>17</dd></div>
+          <div><dt>Conference papers</dt><dd>27</dd></div>
+          <div><dt>Sponsored projects as PI</dt><dd>4</dd></div>
+          <div><dt>Patents published</dt><dd>2</dd></div>
+          <div><dt>Invited talks</dt><dd>70+</dd></div>
+        </dl>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="research" class="block" aria-labelledby="h-research">
+        <h2 id="h-research">Research</h2>
+
+        <article class="area">
+          <h3>Model compression and on-device AI for UAV vision</h3>
+          <p>Quantisation, pruning and lightweight architectures that let segmentation and detection models run directly on drone-mounted hardware, with no network offloading. The anchor application is mapping floating plastic waste in freshwater and coastal waters, including the FloPWD aerial dataset and a lightweight segmentation model built for Jetson-class boards. A newer thread studies vision-only 360° threat detection and trajectory prediction for drones, trained in physics-based simulation.</p>
+        </article>
+
+        <article class="area">
+          <h3>Language models for domain question answering</h3>
+          <p>Parameter-efficient fine-tuning (LoRA and QLoRA) of large and small language models, retrieval-augmented generation, and summarisation for biomedical and legal text, including a dataset for legal question answering in the Indian judiciary. The concern throughout is factual reliability and how little compute a useful model needs.</p>
+        </article>
+
+        <article class="area">
+          <h3>Trustworthy healthcare AI and federated learning</h3>
+          <p>Interpretable, carefully validated and privacy-preserving deep learning for clinical decision support, with fetal ultrasound plane classification and cardiotocography as the main cases. Federated training lets hospitals contribute to a model without sharing patient images.</p>
+        </article>
+
+        <article class="area">
+          <h3>Graph neural networks and pharmacovigilance</h3>
+          <p>Heterogeneous knowledge graphs built from drug and adverse-event sources, and graph models that predict drug–adverse reaction links and flag safety signals.</p>
+        </article>
+
+        <p class="note">Where this began: my doctoral work built semantic term-association graphs, topic models and evolutionary and swarm optimisation into a personalised information retrieval system.</p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="block" aria-labelledby="h-projects">
+        <h2 id="h-projects">Sponsored projects as Principal Investigator</h2>
+        <ol class="rows projects">
+          <li>
+            <div class="row-main">
+              <h3>EcoEdgeAI: aerial vision for real-time monitoring of plastic waste in freshwater ecosystems</h3>
+              <p class="meta">IIIT Hyderabad iHub-Data · ₹9.99 lakh · Mar 2026 to Feb 2027</p>
+            </div>
+            <span class="tag tag-live">Ongoing</span>
+          </li>
+          <li>
+            <div class="row-main">
+              <h3>Software tool for automatic detection of plastic waste deposits in Dal Lake using aerial image analysis</h3>
+              <p class="meta">J&amp;K Science, Technology and Innovation Council, DST · ₹5.7 lakh · Jan 2024 to Jul 2026</p>
+            </div>
+            <span class="tag">Completed</span>
+          </li>
+          <li>
+            <div class="row-main">
+              <h3>Intelligent transport system for healthcare</h3>
+              <p class="meta">TEQIP-II institute seed grant · ₹50,000 · Dec 2016 to Jun 2017</p>
+            </div>
+            <span class="tag">Completed</span>
+          </li>
+          <li>
+            <div class="row-main">
+              <h3>Personalised information retrieval using computational intelligence</h3>
+              <p class="meta">DST INSPIRE Fellowship (IF110779) · ₹10.25 lakh · Jan 2012 to Aug 2015</p>
+            </div>
+            <span class="tag">Completed</span>
+          </li>
+        </ol>
+
+        <h3 class="sub">Datasets and patents</h3>
+        <ul class="plain">
+          <li><strong>FloPWD</strong>: annotated UAV imagery of floating plastic waste, released for the research community.</li>
+          <li>Two published patents.</li>
+        </ul>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="block" aria-labelledby="h-pubs">
+        <h2 id="h-pubs">Selected publications</h2>
+        <p class="lede">A short selection. The full record is on <a href="https://orcid.org/0000-0002-8060-5450" rel="me noopener">ORCID</a>.</p>
+
+        <ol class="pubs" reversed>
+          <li>
+            <span class="yr">2026</span>
+            <p><strong>Veningston K</strong>, Ronalda M, Sathiyaraj R, Selvan C, Venkateswara Rao P V, Karravula J. Real-time traffic obstacle detection using hybrid FCL for R-CNN and EfficientDet with transfer learning. <em>Discover Artificial Intelligence</em> 6. <a href="https://doi.org/10.1007/s44163-026-00871-7">doi:10.1007/s44163-026-00871-7</a></p>
+          </li>
+          <li>
+            <span class="yr">2026</span>
+            <p>Mushtaq S, <strong>Veningston K</strong>. Biomedical text summarization with large language models: methodologies, challenges, and future directions. <em>International Journal of Data Science and Analytics</em> 22. <a href="https://doi.org/10.1007/s41060-025-00956-z">doi:10.1007/s41060-025-00956-z</a></p>
+          </li>
+          <li>
+            <span class="yr">2025</span>
+            <p><strong>Veningston K</strong>, Ajaz S, Mushtaq G, Ul Haq A. FloPWD: a novel UAV-based dataset and lightweight segmentation model for real-time edge deployment. <em>IEEE International Conference on Intelligent Computing and Systems at the Edge (ICEdge)</em>. <a href="https://doi.org/10.1109/ICEdge67252.2025.11412609">doi:10.1109/ICEdge67252.2025.11412609</a></p>
+          </li>
+          <li>
+            <span class="yr">2025</span>
+            <p>Mushtaq G, <strong>Veningston K</strong>. Fetal MoAt Net: a light-weight deep learning model for fetal diagnostic plane classification. <em>International Journal of Computers and Applications</em>, 927–942. <a href="https://doi.org/10.1080/1206212X.2025.2543550">doi:10.1080/1206212X.2025.2543550</a></p>
+          </li>
+          <li>
+            <span class="yr">2025</span>
+            <p>Mushtaq S, <strong>Veningston K</strong>. Optimized dynamic multi-head attention for abstractive text summarization. <em>International Journal of Data Science and Analytics</em> 20, 7233–7255. <a href="https://doi.org/10.1007/s41060-025-00863-3">doi:10.1007/s41060-025-00863-3</a></p>
+          </li>
+          <li>
+            <span class="yr">2025</span>
+            <p><strong>Veningston K</strong>, Mishra A. Dataset for legal question answering system in the Indian judiciary context. <em>Data in Brief</em> 60. <a href="https://doi.org/10.1016/j.dib.2025.111647">doi:10.1016/j.dib.2025.111647</a></p>
+          </li>
+          <li>
+            <span class="yr">2025</span>
+            <p>Verma P, Rasool T, Shaikh T A, <strong>Veningston K</strong>. <em>Generative Artificial Intelligence and Large Language Models for Smart Healthcare Applications</em>. Cambridge Scholars Publishing.</p>
+          </li>
+          <li>
+            <span class="yr">2024</span>
+            <p>Mushtaq G, <strong>Veningston K</strong>. AI driven interpretable deep learning based fetal health classification. <em>SLAS Technology</em> 29. <a href="https://doi.org/10.1016/j.slast.2024.100206">doi:10.1016/j.slast.2024.100206</a></p>
+          </li>
+          <li>
+            <span class="yr">2019</span>
+            <p><strong>Veningston K</strong>, Kadry S, Kalash H S, Balamurugan B, Sathiyaraj R. Intelligent social network-based data modeling for improving health care. <em>Health and Technology</em> 10, 321–332. <a href="https://doi.org/10.1007/s12553-019-00303-w">doi:10.1007/s12553-019-00303-w</a></p>
+          </li>
+          <li>
+            <span class="yr">2015</span>
+            <p><strong>Veningston K</strong>, Shanmugalakshmi R, Nirmala V. Semantic association ranking schemes for information retrieval applications using term association graph representation. <em>Sādhanā</em> 40, 1793–1819. <a href="https://doi.org/10.1007/s12046-015-0413-3">doi:10.1007/s12046-015-0413-3</a></p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- TEACHING -->
+      <section id="teaching" class="block" aria-labelledby="h-teaching">
+        <h2 id="h-teaching">Teaching</h2>
+        <p>I teach at undergraduate and postgraduate level and like to take on courses I have not taught before, because preparing them keeps my own understanding current. I prepare complete lecture material for every course and keep it available to students for the long term.</p>
+        <ul class="chips" aria-label="Courses taught or prepared">
+          <li>Machine Learning</li>
+          <li>Deep Learning</li>
+          <li>Introduction to Data Science</li>
+          <li>Theory of Computation</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Object Oriented Programming</li>
+        </ul>
+        <p class="note">Current-semester courses and material are listed on the department pages.</p>
+      </section>
+
+      <!-- STUDENTS -->
+      <section id="group" class="block" aria-labelledby="h-group">
+        <h2 id="h-group">Students and mentoring</h2>
+        <dl class="facts">
+          <div><dt>Ph.D. thesis submitted</dt><dd>1</dd></div>
+          <div><dt>Ph.D. in progress</dt><dd>3</dd></div>
+          <div><dt>M.Tech. dissertations guided</dt><dd>6</dd></div>
+          <div><dt>B.Tech. projects guided</dt><dd>20+</dd></div>
+        </dl>
+                <p>I welcome enquiries from prospective Ph.D. and M.Tech. students interested in on-device AI, language models for domain question answering, healthcare AI or graph learning. Admissions follow the institute’s official process; a short note about your interests and background is a good start.</p>
+      </section>
+
+      <!-- SERVICE -->
+      <section id="service" class="block" aria-labelledby="h-service">
+        <h2 id="h-service">Service and recognition</h2>
+        <ul class="plain">
+          <li>Senior Member of IEEE and Professional Member of ACM; life member of ISTE, IAENG, the Indian Bayesian Society and the Soft Computing Research Society.</li>
+          <li>More than 70 invited and keynote talks, and technical-programme committee and session-chair roles at national and international conferences.</li>
+          <li>Secretary, International Conference on Machine Intelligence for Research and Innovations (MAiTRI 2024), NIT Srinagar.</li>
+          <li>Convener of a five-day workshop on agri-robotics (2023) and coordinator of a five-day short-term course on computer vision and data skills (2026).</li>
+          <li>Set up an embedded systems laboratory in the Department of Computer Science and Engineering, NIT Srinagar.</li>
+          <li>Gold medal for first rank in the M.E. programme, Anna University; qualified UGC-NET (2012) and GATE.</li>
+        </ul>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="block" aria-labelledby="h-exp">
+        <h2 id="h-exp">Experience and education</h2>
+        <ol class="timeline">
+          <li><span class="when">2026 to now</span><span class="what">Assistant Professor, Computer Science and Engineering, NITK Surathkal</span></li>
+          <li><span class="when">2021 to 2026</span><span class="what">Assistant Professor, Computer Science and Engineering, NIT Srinagar</span></li>
+          <li><span class="when">2020 to 2021</span><span class="what">Professor, Madanapalle Institute of Technology and Science</span></li>
+          <li><span class="when">2015 to 2020</span><span class="what">Associate Professor, Madanapalle Institute of Technology and Science</span></li>
+          <li><span class="when">2012 to 2015</span><span class="what">Junior and Senior Research Fellow (DST INSPIRE), Government College of Technology, Coimbatore</span></li>
+          <li><span class="when">2009 to 2011</span><span class="what">Lecturer, Karunya Institute of Technology and Sciences</span></li>
+        </ol>
+        <ul class="plain edu">
+          <li><strong>Ph.D.</strong>, Computer Science and Engineering, Anna University, Chennai (2016)</li>
+          <li><strong>M.E.</strong>, Computer Science and Engineering, Anna University, Coimbatore (2009)</li>
+          <li><strong>B.E.</strong>, Computer Science and Engineering, Anna University (2007)</li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="block" aria-labelledby="h-contact">
+        <h2 id="h-contact">Contact</h2>
+        <address>
+          Dr. K. Veningston<br>
+          Department of Computer Science and Engineering<br>
+          National Institute of Technology Karnataka, Surathkal<br>
+          Mangaluru, Karnataka, India
+        </address>
+        <p id="email-line" hidden>Email: <a id="email-link"></a></p>
+        <noscript><p class="note">Enable JavaScript to see the email address.</p></noscript>
+      </section>
+
+      <footer class="foot">
+        <p>© <span id="yr">2026</span> K. Veningston. Last updated November 2026.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
