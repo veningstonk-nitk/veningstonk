@@ -27,6 +27,30 @@ var SITE = {
     document.getElementById("email-line").hidden = false;
   }
 
+  /* publication filter and search */
+  var list = document.getElementById("publist");
+  if (list) {
+    var items = Array.prototype.slice.call(list.children);
+    var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+    var q = document.getElementById("q"), cnt = document.getElementById("count");
+    var active = {};
+    var apply = function () {
+      var term = q.value.trim().toLowerCase(), any = Object.keys(active).length > 0, n = 0;
+      items.forEach(function (li) {
+        var ok = (!any || active[li.getAttribute("data-type")]) && (!term || li.textContent.toLowerCase().indexOf(term) > -1);
+        li.hidden = !ok; if (ok) n++;
+      });
+      cnt.textContent = "Showing " + n + " of " + items.length + " items";
+    };
+    chips.forEach(function (c) {
+      c.addEventListener("click", function () {
+        var f = c.getAttribute("data-f"), on = c.getAttribute("aria-pressed") !== "true";
+        c.setAttribute("aria-pressed", on); if (on) active[f] = 1; else delete active[f]; apply();
+      });
+    });
+    q.addEventListener("input", apply); apply();
+  }
+
   /* highlight current section in nav */
   var links = {};
   document.querySelectorAll(".nav a").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });

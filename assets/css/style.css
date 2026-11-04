@@ -24,7 +24,7 @@ a:hover{color:var(--signal-ink)}
 .skip{position:absolute;left:-999px;top:0;background:var(--teal);color:var(--paper);padding:.6rem 1rem;z-index:10}
 .skip:focus{left:0}
 
-.layout{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:100vh}
+.layout{display:grid;grid-template-columns:272px minmax(0,1fr);min-height:100vh}
 .side{background:var(--side-bg);border-right:1px solid var(--line)}
 .side-inner{position:sticky;top:0;padding:2.5rem 1.75rem;font-family:var(--sans);max-height:100vh;overflow:auto}
 .portrait{position:relative;width:132px;height:132px;border-radius:50%;overflow:hidden;background:var(--teal);margin-bottom:1.25rem}
@@ -40,10 +40,15 @@ a:hover{color:var(--signal-ink)}
 .ext{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-size:.9rem}
 .ext a{font-weight:600}
 
-.content{padding:3.5rem clamp(1.25rem,5vw,4.5rem) 3rem;max-width:56rem}
-.hero-title{font:600 clamp(1.8rem,3.6vw,2.7rem)/1.18 var(--serif);margin:0 0 1rem;letter-spacing:-.015em;color:var(--teal-2);max-width:30ch}
-.hero-sub{font-size:1.15rem;color:var(--muted);max-width:60ch;margin:0 0 2rem}
-.aerial{margin:0 0 3.5rem}
+.content{padding:3rem clamp(1.25rem,4vw,4rem) 3rem;max-width:100rem;min-width:0}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center;margin-bottom:2rem}
+.hero-title{font:600 clamp(1.8rem,3.2vw,2.8rem)/1.16 var(--serif);margin:0 0 1rem;letter-spacing:-.015em;color:var(--teal-2)}
+.hero-sub{font-size:1.15rem;color:var(--muted);max-width:56ch;margin:0 0 1.5rem}
+.btn{display:inline-block;font:600 .95rem var(--sans);padding:.6rem 1.2rem;background:var(--teal);color:var(--paper);border-radius:4px;text-decoration:none;margin-right:.5rem}
+.btn:hover{background:var(--teal-2);color:var(--paper)}
+.btn-ghost{background:transparent;color:var(--teal);border:1.5px solid var(--teal);padding:.5rem 1.15rem}
+.btn-ghost:hover{background:var(--side-bg);color:var(--teal-2)}
+.aerial{margin:0}
 .aerial svg{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line)}
 .aerial figcaption{font:.82rem/1.45 var(--sans);color:var(--muted);margin-top:.6rem}
 
@@ -118,3 +123,35 @@ address{font-style:normal;margin-bottom:1rem}
   .pubs li{grid-template-columns:1fr}
 }
 @media print{.side{display:none}.layout{display:block}}
+
+/* wide section layout */
+.strip{grid-template-columns:repeat(auto-fit,minmax(120px,1fr));margin:0 0 3rem;padding:1.5rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.block{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:1rem 3rem}
+.block>h2{margin:0;position:sticky;top:1.5rem;align-self:start}
+.block .body{min-width:0}
+.block .body>*:last-child{margin-bottom:0}
+.block p{max-width:none}
+.body>p,.body .plain,.lede{max-width:72ch}
+.cols-2{columns:2 22rem;column-gap:3rem}
+.cols-2 p{break-inside:avoid-column}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:1.5rem 3rem;margin-bottom:1.25rem}
+.grid-2.tight{margin-top:1.5rem}
+.grid-2 .area{border-top:2px solid var(--teal);padding-top:.9rem}
+.grid-2 .area:first-of-type{border-top:2px solid var(--teal);padding-top:.9rem}
+.sub{margin-top:0!important}
+.tools{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+.chips-row{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{font:500 .88rem var(--sans);padding:.3rem .8rem;border:1px solid var(--line);border-radius:99px;background:transparent;color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--teal)}
+.chip[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:var(--paper)}
+.search input{font:1rem var(--sans);padding:.5rem .8rem;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);min-width:min(100%,18rem)}
+.sr{position:absolute;left:-999px}
+.badge{font:600 .72rem var(--sans);color:var(--signal-ink);border:1px solid var(--signal);border-radius:99px;padding:.05rem .5rem;white-space:nowrap}
+.pubs li[hidden]{display:none}
+.rows .row-main{flex:1}
+.facts.strip div,.block .facts div{min-width:0}
+@media (max-width:1100px){
+  .hero{grid-template-columns:1fr}
+  .block{grid-template-columns:1fr;gap:.5rem}
+  .block>h2{position:static}
+}

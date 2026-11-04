@@ -57,7 +57,8 @@
             <li><a href="#publications">Publications</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#group">Students</a></li>
-            <li><a href="#service">Service</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#service">Recognition</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -74,12 +75,12 @@
     </aside>
 
     <main id="main" class="content">
-
-      <!-- HERO -->
       <section class="hero" aria-labelledby="hero-title">
-        <h2 id="hero-title" class="hero-title">AI models small enough to fly on a drone, used on problems that matter close to home.</h2>
-        <p class="hero-sub">My group compresses and deploys deep learning models on drone and microcontroller hardware, and applies them to floating plastic in lakes and coasts, fetal ultrasound, and drug safety.</p>
-
+        <div class="hero-text">
+          <h2 id="hero-title" class="hero-title">AI models small enough to fly on a drone, used on problems that matter close to home.</h2>
+          <p class="hero-sub">My group compresses and deploys deep learning models on drone and microcontroller hardware, and applies them to floating plastic in lakes and coasts, fetal ultrasound, and drug safety.</p>
+          <p class="hero-cta"><a class="btn" href="#publications">Publications</a> <a class="btn btn-ghost" href="#contact">Contact</a></p>
+        </div>
         <figure class="aerial">
           <svg viewBox="0 0 640 380" role="img" aria-labelledby="aerial-t aerial-d" xmlns="http://www.w3.org/2000/svg">
             <title id="aerial-t">Illustration of drone-based plastic detection on a lake</title>
@@ -159,213 +160,203 @@
         </figure>
       </section>
 
-      <!-- ABOUT -->
+      <dl class="facts strip" aria-label="Summary">
+        <div><dt>Experience after Ph.D.</dt><dd>11 yrs</dd></div>
+        <div><dt>Journal papers</dt><dd>17</dd></div>
+        <div><dt>Conference papers</dt><dd>27</dd></div>
+        <div><dt>Funded projects as PI</dt><dd>4</dd></div>
+        <div><dt>Datasets</dt><dd>3</dd></div>
+        <div><dt>Patents published</dt><dd>2</dd></div>
+        <div><dt>Invited talks</dt><dd>70+</dd></div>
+      </dl>
+
       <section id="about" class="block" aria-labelledby="h-about">
         <h2 id="h-about">About</h2>
-        <p>I am an Assistant Professor in the Department of Computer Science and Engineering at NITK Surathkal, where I joined in October 2026. Before this I was at NIT Srinagar (2021 to 2026), at Madanapalle Institute of Technology and Science as Associate Professor and later Professor (2015 to 2021), and at Karunya Institute of Technology and Sciences. I completed my Ph.D. at Anna University, Chennai, on personalised information retrieval, supported by a DST INSPIRE Fellowship.</p>
-        <p>My work sits where model design meets deployment. I am interested in how far a deep network can be shrunk through quantisation, pruning and careful architecture choices before it stops being useful, and in what that makes possible on a drone, a microcontroller or a clinic laptop. The applications I return to are environmental monitoring, maternal and fetal health, and the safety of medicines.</p>
-
-        <dl class="facts">
-          <div><dt>Experience after Ph.D.</dt><dd>11 years</dd></div>
-          <div><dt>Journal papers</dt><dd>17</dd></div>
-          <div><dt>Conference papers</dt><dd>27</dd></div>
-          <div><dt>Sponsored projects as PI</dt><dd>4</dd></div>
-          <div><dt>Patents published</dt><dd>2</dd></div>
-          <div><dt>Invited talks</dt><dd>70+</dd></div>
-        </dl>
+        <div class="body cols-2">
+          <p>I am an Assistant Professor in the Department of Computer Science and Engineering at NITK Surathkal, where I joined in October 2026. Before this I was at NIT Srinagar (2021 to 2026), at Madanapalle Institute of Technology and Science as Associate Professor and later Professor (2015 to 2021), and at Karunya as a Lecturer. My Ph.D. at Anna University, Chennai, on personalised information retrieval, was supported by a DST INSPIRE Fellowship.</p>
+          <p>My work sits where model design meets deployment. I am interested in how far a deep network can be shrunk through quantisation, pruning and careful architecture choices before it stops being useful, and in what that makes possible on a drone, a microcontroller or a clinic laptop. The applications I return to are environmental monitoring, maternal and fetal health, and the safety of medicines.</p>
+        </div>
       </section>
 
-      <!-- RESEARCH -->
       <section id="research" class="block" aria-labelledby="h-research">
         <h2 id="h-research">Research</h2>
-
-        <article class="area">
-          <h3>Model compression and on-device AI for UAV vision</h3>
-          <p>Quantisation, pruning and lightweight architectures that let segmentation and detection models run directly on drone-mounted hardware, with no network offloading. The anchor application is mapping floating plastic waste in freshwater and coastal waters, including the FloPWD aerial dataset and a lightweight segmentation model built for Jetson-class boards. A newer thread studies vision-only 360° threat detection and trajectory prediction for drones, trained in physics-based simulation.</p>
-        </article>
-
-        <article class="area">
-          <h3>Language models for domain question answering</h3>
-          <p>Parameter-efficient fine-tuning (LoRA and QLoRA) of large and small language models, retrieval-augmented generation, and summarisation for biomedical and legal text, including a dataset for legal question answering in the Indian judiciary. The concern throughout is factual reliability and how little compute a useful model needs.</p>
-        </article>
-
-        <article class="area">
-          <h3>Trustworthy healthcare AI and federated learning</h3>
-          <p>Interpretable, carefully validated and privacy-preserving deep learning for clinical decision support, with fetal ultrasound plane classification and cardiotocography as the main cases. Federated training lets hospitals contribute to a model without sharing patient images.</p>
-        </article>
-
-        <article class="area">
-          <h3>Graph neural networks and pharmacovigilance</h3>
-          <p>Heterogeneous knowledge graphs built from drug and adverse-event sources, and graph models that predict drug–adverse reaction links and flag safety signals.</p>
-        </article>
-
-        <p class="note">Where this began: my doctoral work built semantic term-association graphs, topic models and evolutionary and swarm optimisation into a personalised information retrieval system.</p>
+        <div class="body">
+          <div class="grid-2">
+            <article class="area"><h3>Model compression and on-device AI for UAV vision</h3><p>Quantisation, pruning and lightweight architectures that let segmentation and detection models run directly on drone-mounted hardware, with no network offloading. The anchor application is mapping floating plastic waste in lakes and coastal waters, through the FloPWD and AquaPlasticWaste datasets and lightweight segmentation models built for Jetson-class boards. A newer thread studies vision-only 360° threat detection and trajectory prediction for drones, trained in physics-based simulation.</p></article>
+            <article class="area"><h3>Language models for domain question answering</h3><p>Parameter-efficient fine-tuning (LoRA and QLoRA) of large and small language models, retrieval-augmented generation, and summarisation for biomedical and legal text, including the IndicLegalQA dataset for the Indian judiciary. The concern throughout is factual reliability and how little compute a useful model needs.</p></article>
+            <article class="area"><h3>Trustworthy healthcare AI and federated learning</h3><p>Interpretable, carefully validated and privacy-preserving deep learning for clinical decision support, with fetal ultrasound plane classification and fetal health assessment as the main cases. Federated training lets hospitals contribute to a model without sharing patient images.</p></article>
+            <article class="area"><h3>Graph neural networks and pharmacovigilance</h3><p>Heterogeneous knowledge graphs built from drug and adverse-event sources, and graph models that predict drug–adverse reaction links and flag safety signals from clinical text.</p></article>
+          </div>
+          <p class="note">Where this began: my doctoral work built semantic term-association graphs, topic models and evolutionary and swarm optimisation into a personalised information retrieval system.</p>
+        </div>
       </section>
 
-      <!-- PROJECTS -->
       <section id="projects" class="block" aria-labelledby="h-projects">
-        <h2 id="h-projects">Sponsored projects as Principal Investigator</h2>
-        <ol class="rows projects">
-          <li>
-            <div class="row-main">
-              <h3>EcoEdgeAI: aerial vision for real-time monitoring of plastic waste in freshwater ecosystems</h3>
-              <p class="meta">IIIT Hyderabad iHub-Data · ₹9.99 lakh · Mar 2026 to Feb 2027</p>
-            </div>
-            <span class="tag tag-live">Ongoing</span>
-          </li>
-          <li>
-            <div class="row-main">
-              <h3>Software tool for automatic detection of plastic waste deposits in Dal Lake using aerial image analysis</h3>
-              <p class="meta">J&amp;K Science, Technology and Innovation Council, DST · ₹5.7 lakh · Jan 2024 to Jul 2026</p>
-            </div>
-            <span class="tag">Completed</span>
-          </li>
-          <li>
-            <div class="row-main">
-              <h3>Intelligent transport system for healthcare</h3>
-              <p class="meta">TEQIP-II institute seed grant · ₹50,000 · Dec 2016 to Jun 2017</p>
-            </div>
-            <span class="tag">Completed</span>
-          </li>
-          <li>
-            <div class="row-main">
-              <h3>Personalised information retrieval using computational intelligence</h3>
-              <p class="meta">DST INSPIRE Fellowship (IF110779) · ₹10.25 lakh · Jan 2012 to Aug 2015</p>
-            </div>
-            <span class="tag">Completed</span>
-          </li>
-        </ol>
-
-        <h3 class="sub">Datasets and patents</h3>
-        <ul class="plain">
-          <li><strong>FloPWD</strong>: annotated UAV imagery of floating plastic waste, released for the research community.</li>
-          <li>Two published patents.</li>
-        </ul>
+        <h2 id="h-projects">Projects, datasets and patents</h2>
+        <div class="body">
+          <ol class="rows projects">
+            <li><div class="row-main"><h3>EcoEdgeAI: aerial edge vision system for real-time monitoring of plastic waste in freshwater ecosystems</h3><p class="meta">IIIT Hyderabad iHub-Data · ₹9.99 lakh · Mar 2026 to Feb 2027</p></div><span class="tag tag-live">Ongoing</span></li>
+            <li><div class="row-main"><h3>Software tool for automatic detection of plastic waste deposits in Dal Lake using aerial image analysis</h3><p class="meta">J&amp;K Science, Technology and Innovation Council · ₹5.7 lakh · Jan 2024 to Jan 2026</p></div><span class="tag">Completed</span></li>
+            <li><div class="row-main"><h3>Intelligent transport system for healthcare</h3><p class="meta">TEQIP-II institute seed grant · ₹50,000 · Dec 2016 to Jun 2017</p></div><span class="tag">Completed</span></li>
+            <li><div class="row-main"><h3>Personalised information retrieval using computational intelligence techniques</h3><p class="meta">DST INSPIRE Fellowship · ₹10.25 lakh · Jan 2012 to Aug 2015</p></div><span class="tag">Completed</span></li>
+          </ol>
+          <div class="grid-2 tight">
+            <div><h3 class="sub">Datasets</h3><ul class="plain">
+              <li><a href="https://doi.org/10.21227/phkj-qr22"><strong>AquaPlasticWaste 2026</strong></a>: 5,000 drone images with multi-task labels (IEEE DataPort).</li>
+              <li><a href="https://doi.org/10.17632/znxjncgjkc.3"><strong>FloPWD 2025</strong></a>: 2,006 pixel-annotated Dal Lake images (Mendeley Data).</li>
+              <li><a href="https://doi.org/10.17632/gf8n8cnmvc.3"><strong>IndicLegalQA</strong></a>: 10,000 legal question–answer pairs (Mendeley Data).</li></ul></div>
+            <div><h3 class="sub">Patents (published)</h3><ul class="plain">
+              <li>Real time aerial vision system for localizing and reporting plastic waste (2026).</li>
+              <li>System for preferential route control of emergency vehicles by controlling traffic lights (2019).</li></ul></div>
+          </div>
+        </div>
       </section>
 
-      <!-- PUBLICATIONS -->
       <section id="publications" class="block" aria-labelledby="h-pubs">
-        <h2 id="h-pubs">Selected publications</h2>
-        <p class="lede">A short selection. The full record is on <a href="https://orcid.org/0000-0002-8060-5450" rel="me noopener">ORCID</a>.</p>
-
-        <ol class="pubs" reversed>
-          <li>
-            <span class="yr">2026</span>
-            <p><strong>Veningston K</strong>, Ronalda M, Sathiyaraj R, Selvan C, Venkateswara Rao P V, Karravula J. Real-time traffic obstacle detection using hybrid FCL for R-CNN and EfficientDet with transfer learning. <em>Discover Artificial Intelligence</em> 6. <a href="https://doi.org/10.1007/s44163-026-00871-7">doi:10.1007/s44163-026-00871-7</a></p>
-          </li>
-          <li>
-            <span class="yr">2026</span>
-            <p>Mushtaq S, <strong>Veningston K</strong>. Biomedical text summarization with large language models: methodologies, challenges, and future directions. <em>International Journal of Data Science and Analytics</em> 22. <a href="https://doi.org/10.1007/s41060-025-00956-z">doi:10.1007/s41060-025-00956-z</a></p>
-          </li>
-          <li>
-            <span class="yr">2025</span>
-            <p><strong>Veningston K</strong>, Ajaz S, Mushtaq G, Ul Haq A. FloPWD: a novel UAV-based dataset and lightweight segmentation model for real-time edge deployment. <em>IEEE International Conference on Intelligent Computing and Systems at the Edge (ICEdge)</em>. <a href="https://doi.org/10.1109/ICEdge67252.2025.11412609">doi:10.1109/ICEdge67252.2025.11412609</a></p>
-          </li>
-          <li>
-            <span class="yr">2025</span>
-            <p>Mushtaq G, <strong>Veningston K</strong>. Fetal MoAt Net: a light-weight deep learning model for fetal diagnostic plane classification. <em>International Journal of Computers and Applications</em>, 927–942. <a href="https://doi.org/10.1080/1206212X.2025.2543550">doi:10.1080/1206212X.2025.2543550</a></p>
-          </li>
-          <li>
-            <span class="yr">2025</span>
-            <p>Mushtaq S, <strong>Veningston K</strong>. Optimized dynamic multi-head attention for abstractive text summarization. <em>International Journal of Data Science and Analytics</em> 20, 7233–7255. <a href="https://doi.org/10.1007/s41060-025-00863-3">doi:10.1007/s41060-025-00863-3</a></p>
-          </li>
-          <li>
-            <span class="yr">2025</span>
-            <p><strong>Veningston K</strong>, Mishra A. Dataset for legal question answering system in the Indian judiciary context. <em>Data in Brief</em> 60. <a href="https://doi.org/10.1016/j.dib.2025.111647">doi:10.1016/j.dib.2025.111647</a></p>
-          </li>
-          <li>
-            <span class="yr">2025</span>
-            <p>Verma P, Rasool T, Shaikh T A, <strong>Veningston K</strong>. <em>Generative Artificial Intelligence and Large Language Models for Smart Healthcare Applications</em>. Cambridge Scholars Publishing.</p>
-          </li>
-          <li>
-            <span class="yr">2024</span>
-            <p>Mushtaq G, <strong>Veningston K</strong>. AI driven interpretable deep learning based fetal health classification. <em>SLAS Technology</em> 29. <a href="https://doi.org/10.1016/j.slast.2024.100206">doi:10.1016/j.slast.2024.100206</a></p>
-          </li>
-          <li>
-            <span class="yr">2019</span>
-            <p><strong>Veningston K</strong>, Kadry S, Kalash H S, Balamurugan B, Sathiyaraj R. Intelligent social network-based data modeling for improving health care. <em>Health and Technology</em> 10, 321–332. <a href="https://doi.org/10.1007/s12553-019-00303-w">doi:10.1007/s12553-019-00303-w</a></p>
-          </li>
-          <li>
-            <span class="yr">2015</span>
-            <p><strong>Veningston K</strong>, Shanmugalakshmi R, Nirmala V. Semantic association ranking schemes for information retrieval applications using term association graph representation. <em>Sādhanā</em> 40, 1793–1819. <a href="https://doi.org/10.1007/s12046-015-0413-3">doi:10.1007/s12046-015-0413-3</a></p>
-          </li>
-        </ol>
+        <h2 id="h-pubs">Publications</h2>
+        <div class="body">
+          <div class="tools">
+            <div class="chips-row" role="group" aria-label="Filter by type"><button type="button" class="chip" data-f="journal" aria-pressed="false">Journals</button><button type="button" class="chip" data-f="conference" aria-pressed="false">Conferences</button><button type="button" class="chip" data-f="chapter" aria-pressed="false">Books and chapters</button><button type="button" class="chip" data-f="edited" aria-pressed="false">Edited books</button><button type="button" class="chip" data-f="dataset" aria-pressed="false">Datasets</button><button type="button" class="chip" data-f="patent" aria-pressed="false">Patents</button></div>
+            <label class="search"><span class="sr">Search publications</span><input id="q" type="search" placeholder="Search title, venue, author" autocomplete="off"></label>
+          </div>
+          <p class="note" id="count" aria-live="polite"></p>
+          <ol class="pubs" id="publist">
+<li data-type="journal"><span class="yr">2026</span><p>Mushtaq G, <strong>Veningston K</strong>. Fused activation deep neural network classifier with Cat-Hawk optimization for fetal health classification. <em>Int. J. of Computers and Applications 48, 690–708</em>. <a href="https://doi.org/10.1080/1206212X.2026.2719005">doi:10.1080/1206212X.2026.2719005</a></p></li>
+<li data-type="journal"><span class="yr">2026</span><p><strong>Veningston K</strong>, Mushtaq G. A lightweight federated deep learning framework for privacy-preserving fetal ultrasound analysis. <em>Discover Artificial Intelligence (in press)</em>. <a href="https://doi.org/10.1007/s44163-026-01827-7">doi:10.1007/s44163-026-01827-7</a></p></li>
+<li data-type="journal"><span class="yr">2026</span><p><strong>Veningston K</strong>, Ronalda M, Sathiyaraj R, Selvan C, Venkateswara Rao P V, Karravula J. Real-time traffic obstacle detection using hybrid FCL for R-CNN and EfficientDet with transfer learning. <em>Discover Artificial Intelligence 6, 186</em>. <a href="https://doi.org/10.1007/s44163-026-00871-7">doi:10.1007/s44163-026-00871-7</a></p></li>
+<li data-type="journal"><span class="yr">2026</span><p>Mushtaq S, <strong>Veningston K</strong>. Biomedical text summarization with large language models: methodologies, challenges, and future directions. <em>Int. J. of Data Science and Analytics 22, 29</em>. <a href="https://doi.org/10.1007/s41060-025-00956-z">doi:10.1007/s41060-025-00956-z</a></p></li>
+<li data-type="conference"><span class="yr">2026</span><p><strong>Veningston K</strong>, Ronalda M, Kumar S, Mir R N, Singh M. ClinicalBERT-driven adverse drug reaction signal mining with interpretable visual analytics for pharmacovigilance. <em>BDA 2026, BITS Pilani K K Birla Goa Campus; Springer LNCS (to appear)</em>.</p></li>
+<li data-type="conference"><span class="yr">2026</span><p><strong>Veningston K</strong>, Selvan C, Ronalda M, Chaudhuri B B, Tatwal A. A multi-stage hybrid retrieval framework for knowledge-augmented question answering. <em>ICPR 2026 Workshops, Lyon; Springer LNCS (to appear)</em>. <span class="badge">ANRF travel grant</span></p></li>
+<li data-type="conference"><span class="yr">2026</span><p>Ajay I, Varshini S A, Ashwin S, Ramasamy M, <strong>Veningston K</strong>. A high-resolution data fusion framework for water body assessment using Sentinel-2 and gradient boosting. <em>ICCPCT 2026, Kollam, 1112–1117</em>. <a href="https://doi.org/10.1109/ICCPCT70290.2026.11654963">doi:10.1109/ICCPCT70290.2026.11654963</a></p></li>
+<li data-type="conference"><span class="yr">2026</span><p>Mushtaq G, <strong>Veningston K</strong>. Lightweight neural models for clinical fetal ultrasound assessment. <em>Procedia Computer Science 283, 1668–1677 (ICMLDE 2025)</em>. <a href="https://doi.org/10.1016/j.procs.2026.06.242">doi:10.1016/j.procs.2026.06.242</a></p></li>
+<li data-type="edited"><span class="yr">2026</span><p>Verma P, Rasool T, Shaikh T A, <strong>Veningston K</strong> (eds.). Generative Artificial Intelligence and Large Language Models for Smart Healthcare Applications. <em>Cambridge Scholars Publishing, Dec 2025</em>.</p></li>
+<li data-type="edited"><span class="yr">2026</span><p><strong>Veningston K</strong>, Kumar T A, Karthickmanoj R, Kumar K S, Balamurugan S (eds.). Cloud Robotics: Advances in Autonomous Navigation, Data Processing and Communication Mechanisms. <em>Wiley-Scrivener (in preparation, 30+ chapters)</em>.</p></li>
+<li data-type="dataset"><span class="yr">2026</span><p><strong>Veningston K</strong>, Ul Haq A, Mushtaq S, Ronalda M, Rajendran D K. Multi-task UAV dataset for floating plastic waste detection in the Kashmir region (AquaPlasticWaste 2026). <em>IEEE DataPort. 5,000 drone images with classification, regression, semantic and instance labels</em>. <a href="https://doi.org/10.21227/phkj-qr22">doi:10.21227/phkj-qr22</a></p></li>
+<li data-type="patent"><span class="yr">2026</span><p><strong>Veningston K</strong>, et al.. Real time aerial vision system for localizing and reporting plastic waste. <em>Indian patent application 202611080911 A, published 14 Aug 2026, under examination</em>.</p></li>
+<li data-type="journal"><span class="yr">2025</span><p>Mushtaq G, <strong>Veningston K</strong>. Fetal MoAt Net: a light-weight deep learning model for fetal diagnostic plane classification. <em>Int. J. of Computers and Applications 47(11), 927–942</em>. <a href="https://doi.org/10.1080/1206212X.2025.2543550">doi:10.1080/1206212X.2025.2543550</a></p></li>
+<li data-type="journal"><span class="yr">2025</span><p>Mushtaq S, <strong>Veningston K</strong>. Optimized dynamic multi-head attention for abstractive text summarization. <em>Int. J. of Data Science and Analytics 20, 7233–7255</em>. <a href="https://doi.org/10.1007/s41060-025-00863-3">doi:10.1007/s41060-025-00863-3</a></p></li>
+<li data-type="journal"><span class="yr">2025</span><p><strong>Veningston K</strong>, Mishra A. Dataset for legal question answering system in the Indian judiciary context. <em>Data in Brief 60, 111647</em>. <a href="https://doi.org/10.1016/j.dib.2025.111647">doi:10.1016/j.dib.2025.111647</a></p></li>
+<li data-type="journal"><span class="yr">2025</span><p>Mushtaq G, <strong>Veningston K</strong>. A comprehensive review on fetal health surveillance using ultrasound imagery. <em>Discover Applied Sciences 7, 478</em>. <a href="https://doi.org/10.1007/s42452-025-06644-8">doi:10.1007/s42452-025-06644-8</a></p></li>
+<li data-type="journal"><span class="yr">2025</span><p><strong>Veningston K</strong>, Ronalda M, Shaikh T A, Gazi F, Bhagat S. Modeling and evaluating stock market and commodity price fluctuation using time series sequence learning. <em>SN Computer Science 6, 435</em>. <a href="https://doi.org/10.1007/s42979-025-03931-4">doi:10.1007/s42979-025-03931-4</a></p></li>
+<li data-type="conference"><span class="yr">2025</span><p><strong>Veningston K</strong>, Ajaz S, Mushtaq G, Ul Haq A. FloPWD: a novel UAV-based dataset and lightweight segmentation model for real-time edge deployment. <em>IEEE ICEdge 2025, IISc Bangalore</em>. <a href="https://doi.org/10.1109/ICEdge67252.2025.11412609">doi:10.1109/ICEdge67252.2025.11412609</a></p></li>
+<li data-type="conference"><span class="yr">2025</span><p><strong>Veningston K</strong>, Selvan C, Prabhakar M, Kumar R S, Singh S, Polisetty B. An attention-based lightweight deep network for crack segmentation in pavements and concrete structures. <em>IEEE ICERCS 2025, Coimbatore</em>.</p></li>
+<li data-type="conference"><span class="yr">2025</span><p><strong>Veningston K</strong>, Selvan C, Kumar R S, Prabhakar M, Steffi D S. A comparative analysis of credit card fraud detection under extreme class imbalance. <em>IEEE ICERCS 2025, Coimbatore</em>.</p></li>
+<li data-type="conference"><span class="yr">2025</span><p><strong>Veningston K</strong>, Selvan C, Rao P V V, Ronalda M, Charan K, Sekhar S C, Chowdary M A. Aromaticity and instability index-based prediction of Parkinson’s disease progression using longitudinal peptide data. <em>AICARE 2025, Kolkata</em>. <a href="https://doi.org/10.1109/AICARE66005.2025.11402688">doi:10.1109/AICARE66005.2025.11402688</a></p></li>
+<li data-type="conference"><span class="yr">2025</span><p>Madhumathi R, <strong>Veningston K</strong>, Dhanishtaa R, Elakkiya E, Gunashri R. Fine-tuning light-weight large language model for medical question answering. <em>IEEE ICCCNT 2025, IIT Indore (EPiC Series in Computing)</em>.</p></li>
+<li data-type="chapter"><span class="yr">2025</span><p>Selvan C, <strong>Veningston K</strong>. Introduction to generative artificial intelligence. <em>in Generative AI and LLMs for Smart Healthcare Applications, Cambridge Scholars, ch. 1, 1–35</em>.</p></li>
+<li data-type="chapter"><span class="yr">2025</span><p>Selvan C, <strong>Veningston K</strong>. Systematic view and impact of generative AI in smart healthcare systems. <em>in Generative AI and LLMs for Smart Healthcare Applications, Cambridge Scholars, ch. 2, 36–65</em>.</p></li>
+<li data-type="chapter"><span class="yr">2025</span><p>Mushtaq S, <strong>Veningston K</strong>. Generative AI and large language models in smart healthcare. <em>in Generative AI and LLMs for Smart Healthcare Applications, Cambridge Scholars, ch. 4, 89–115</em>.</p></li>
+<li data-type="chapter"><span class="yr">2025</span><p><strong>Veningston K</strong>, Selvan C, Ronalda M, Sangeetha S K B. Applications of AI-enabled drones in agriculture. <em>in Digital Technologies and Tools for Smart Agriculture, CRC Press, ch. 11</em>. <a href="https://doi.org/10.1201/9781003487005">doi:10.1201/9781003487005</a></p></li>
+<li data-type="dataset"><span class="yr">2025</span><p><strong>Veningston K</strong>, et al.. Dal Lake floating plastic waste detection dataset (FloPWD 2025). <em>Mendeley Data v3. 2,006 pixel-annotated drone images</em>. <a href="https://doi.org/10.17632/znxjncgjkc.3">doi:10.17632/znxjncgjkc.3</a></p></li>
+<li data-type="journal"><span class="yr">2024</span><p>Shaikh T A, Rasool T, <strong>Veningston K</strong>, Yaseen S M. The role of large language models in agriculture: harvesting the future with LLM intelligence. <em>Progress in Artificial Intelligence 14, 117–164</em>. <a href="https://doi.org/10.1007/s13748-024-00359-4">doi:10.1007/s13748-024-00359-4</a></p></li>
+<li data-type="journal"><span class="yr">2024</span><p>Mushtaq G, <strong>Veningston K</strong>. AI-driven interpretable deep learning based fetal health classification. <em>SLAS Technology 29(6), 100206</em>. <a href="https://doi.org/10.1016/j.slast.2024.100206">doi:10.1016/j.slast.2024.100206</a></p></li>
+<li data-type="conference"><span class="yr">2024</span><p><strong>Veningston K</strong>, Mushtaq S. LoSNet: a tailored deep neural network framework for precise length of stay prediction in disease-specific hospitalization. <em>Procedia Computer Science 235, 2599–2608 (ICMLDE 2024)</em>. <a href="https://doi.org/10.1016/j.procs.2024.04.245">doi:10.1016/j.procs.2024.04.245</a></p></li>
+<li data-type="conference"><span class="yr">2024</span><p>Mubarakali A, Jaganathan S C B, <strong>Veningston K</strong>, et al.. Healthcare network system for elderly community based on data analytics and the Internet of Things. <em>MAiTRI 2024, NIT Srinagar; Springer LNNS 1358</em>. <a href="https://doi.org/10.1007/978-981-96-7614-9_27">doi:10.1007/978-981-96-7614-9_27</a></p></li>
+<li data-type="conference"><span class="yr">2024</span><p><strong>Veningston K</strong>, Rao P V V, Devi M P, Reddy S P, Ronalda M. Plant protein classification using k-mer encoding. <em>CINS 2023, BITS Pilani Dubai; Springer CCIS 1978</em>. <a href="https://doi.org/10.1007/978-3-031-48984-6_8">doi:10.1007/978-3-031-48984-6_8</a></p></li>
+<li data-type="chapter"><span class="yr">2024</span><p>Selvan C, Vidhya K, Kumar R S, <strong>Veningston K</strong>. Comparative overview of augmented, virtual and mixed reality. <em>in Applications of VR and AR for Health and Wellbeing, IGI Global, 1–16</em>. <a href="https://doi.org/10.4018/979-8-3693-1123-3.ch001">doi:10.4018/979-8-3693-1123-3.ch001</a></p></li>
+<li data-type="chapter"><span class="yr">2024</span><p><strong>Veningston K</strong>, Rajendran D K. VR and AR in welding technologies. <em>in Automation in Welding Industry, Wiley-Scrivener, ch. 8, 131–144</em>. <a href="https://doi.org/10.1002/9781394172948.ch8">doi:10.1002/9781394172948.ch8</a></p></li>
+<li data-type="dataset"><span class="yr">2024</span><p><strong>Veningston K</strong>, Mishra A. IndicLegalQA dataset. <em>Mendeley Data v3. 10,000 legal question–answer pairs from Indian courts</em>. <a href="https://doi.org/10.17632/gf8n8cnmvc.3">doi:10.17632/gf8n8cnmvc.3</a></p></li>
+<li data-type="conference"><span class="yr">2023</span><p>Mushtaq G, <strong>Veningston K</strong>. AlzNET: computational clinical decision support for diagnosing Alzheimer’s disease from MRI images. <em>IEEE NEleX 2023, VIT Vellore</em>. <a href="https://doi.org/10.1109/NEleX59773.2023.10421608">doi:10.1109/NEleX59773.2023.10421608</a> <span class="badge">Best paper</span></p></li>
+<li data-type="conference"><span class="yr">2023</span><p><strong>Veningston K</strong>, Rao P V V, Ronalda M. Personalized multi-document text summarization using deep learning techniques. <em>Procedia Computer Science 218, 1220–1228 (ICMLDE 2023)</em>. <a href="https://doi.org/10.1016/j.procs.2023.01.100">doi:10.1016/j.procs.2023.01.100</a></p></li>
+<li data-type="chapter"><span class="yr">2023</span><p>Sangeetha S K B, <strong>Veningston K</strong>, Sathya V, Kanthavel R. Design of a novel privacy preservation based cyber security system framework for secure medical data transactions in cloud storage. <em>in Intelligent Edge Computing for Cyber-Physical Applications, Academic Press, 35–43</em>. <a href="https://doi.org/10.1016/B978-0-323-99412-5.00006-X">doi:10.1016/B978-0-323-99412-5.00006-X</a></p></li>
+<li data-type="journal"><span class="yr">2022</span><p>Vairaganthan N, Daniel E, <strong>Veningston K</strong>. Privacy-preserving ranked remote document retrieval using semantic search keyword technique. <em>INFORMATION 25(3), 201–212</em>.</p></li>
+<li data-type="conference"><span class="yr">2021</span><p><strong>Veningston K</strong>, Rao P V V, Selvan C, Ronalda M. Investigation on customer churn prediction using machine learning techniques. <em>ICDSA 2021; Springer LNNS 287, 109–119</em>. <a href="https://doi.org/10.1007/978-981-16-5348-3_8">doi:10.1007/978-981-16-5348-3_8</a></p></li>
+<li data-type="journal"><span class="yr">2019</span><p><strong>Veningston K</strong>, Kadry S, Kalash H S, Balamurugan B, Sathiyaraj R. Intelligent social network-based data modeling for improving health care. <em>Health and Technology 10, 321–332</em>. <a href="https://doi.org/10.1007/s12553-019-00303-w">doi:10.1007/s12553-019-00303-w</a></p></li>
+<li data-type="conference"><span class="yr">2019</span><p><strong>Veningston K</strong>, Rao P V V. An efficient privacy-preserving search technique for encrypted cloud data. <em>FICTA 2018, Da Nang; Springer AISC 1013, 96–106</em>. <a href="https://doi.org/10.1007/978-981-32-9186-7_11">doi:10.1007/978-981-32-9186-7_11</a> <span class="badge">Best paper</span></p></li>
+<li data-type="patent"><span class="yr">2019</span><p><strong>Veningston K</strong>, et al.. System for preferential route control of emergency vehicle by controlling traffic lights. <em>Indian patent application 201941033704 A, published 30 Aug 2019, under examination</em>.</p></li>
+<li data-type="chapter"><span class="yr">2017</span><p><strong>Veningston K</strong>, Shanmugalakshmi R. Personalized Information Retrieval Systems: Using Computational Intelligence Techniques (textbook). <em>LAP Lambert Academic Publishing, 260 pp.</em>.</p></li>
+<li data-type="journal"><span class="yr">2015</span><p><strong>Veningston K</strong>, Shanmugalakshmi R, Nirmala V. Semantic association ranking schemes for information retrieval applications using term association graph representation. <em>Sādhanā 40, 1793–1819</em>. <a href="https://doi.org/10.1007/s12046-015-0413-3">doi:10.1007/s12046-015-0413-3</a></p></li>
+<li data-type="conference"><span class="yr">2015</span><p><strong>Veningston K</strong>, Shanmugalakshmi R. Personalized location aware recommendation system. <em>IEEE ICACCS 2015, Coimbatore</em>. <a href="https://doi.org/10.1109/ICACCS.2015.7324140">doi:10.1109/ICACCS.2015.7324140</a> <span class="badge">Best paper</span></p></li>
+<li data-type="chapter"><span class="yr">2015</span><p>Madhumathi R, Radhakrishnan R, <strong>Veningston K</strong>. Cloud resource allocation schemes using drip irrigation approach. <em>in Advances in Innovative Engineering and Technologies (ICIET 2015, Bangkok), 114–124</em>. <a href="https://doi.org/10.18797/CAASR/ICIET/2015/11/27/09">doi:10.18797/CAASR/ICIET/2015/11/27/09</a></p></li>
+<li data-type="journal"><span class="yr">2014</span><p><strong>Veningston K</strong>, Shanmugalakshmi R. Computational intelligence for information retrieval using genetic algorithm. <em>INFORMATION 17(8), 3825–3832</em>.</p></li>
+<li data-type="conference"><span class="yr">2014</span><p><strong>Veningston K</strong>, Shanmugalakshmi R. Information retrieval by document re-ranking using term association graph. <em>ACM ICONIAAC 2014, Amrita University</em>. <a href="https://doi.org/10.1145/2660859.2660927">doi:10.1145/2660859.2660927</a> <span class="badge">Best paper</span></p></li>
+<li data-type="conference"><span class="yr">2014</span><p><strong>Veningston K</strong>, Shanmugalakshmi R. Combining user-interested topic and document topic for personalized information retrieval. <em>BDA 2014; Springer LNCS 8883, 60–79</em>. <a href="https://doi.org/10.1007/978-3-319-13820-6_6">doi:10.1007/978-3-319-13820-6_6</a></p></li>
+<li data-type="conference"><span class="yr">2014</span><p><strong>Veningston K</strong>, Shanmugalakshmi R. Efficient implementation of web search query reformulation using ant colony optimization. <em>BDA 2014; Springer LNCS 8883, 80–94</em>. <a href="https://doi.org/10.1007/978-3-319-13820-6_7">doi:10.1007/978-3-319-13820-6_7</a></p></li>
+<li data-type="conference"><span class="yr">2013</span><p><strong>Veningston K</strong>, Shanmugalakshmi R. Statistical language modeling for personalizing information retrieval. <em>IEEE ICACCS 2013, 1–6</em>. <a href="https://doi.org/10.1109/ICACCS.2013.6938717">doi:10.1109/ICACCS.2013.6938717</a> <span class="badge">Best paper</span></p></li>
+          </ol>
+          <p class="note">Earlier conference papers (2008 to 2016) are listed in my CV. Full record on <a href="https://orcid.org/0000-0002-8060-5450" rel="me noopener">ORCID</a>.</p>
+        </div>
       </section>
 
-      <!-- TEACHING -->
       <section id="teaching" class="block" aria-labelledby="h-teaching">
         <h2 id="h-teaching">Teaching</h2>
-        <p>I teach at undergraduate and postgraduate level and like to take on courses I have not taught before, because preparing them keeps my own understanding current. I prepare complete lecture material for every course and keep it available to students for the long term.</p>
-        <ul class="chips" aria-label="Courses taught or prepared">
-          <li>Machine Learning</li>
-          <li>Deep Learning</li>
-          <li>Introduction to Data Science</li>
-          <li>Theory of Computation</li>
-          <li>Data Structures and Algorithms</li>
-          <li>Object Oriented Programming</li>
-        </ul>
-        <p class="note">Current-semester courses and material are listed on the department pages.</p>
+        <div class="body">
+          <p>I teach at undergraduate and postgraduate level and like to take on courses I have not taught before, because preparing them keeps my own understanding current. I prepare complete lecture material for every course and keep it available to students.</p>
+          <ul class="chips" aria-label="Courses taught or prepared"><li>Machine Learning</li><li>Deep Learning</li><li>Introduction to Data Science</li><li>Theory of Computation</li><li>Data Structures and Algorithms</li><li>Object Oriented Programming</li></ul>
+          <p class="note">Current-semester courses and material are listed on the department pages.</p>
+        </div>
       </section>
 
-      <!-- STUDENTS -->
       <section id="group" class="block" aria-labelledby="h-group">
         <h2 id="h-group">Students and mentoring</h2>
-        <dl class="facts">
-          <div><dt>Ph.D. thesis submitted</dt><dd>1</dd></div>
-          <div><dt>Ph.D. in progress</dt><dd>3</dd></div>
-          <div><dt>M.Tech. dissertations guided</dt><dd>6</dd></div>
-          <div><dt>B.Tech. projects guided</dt><dd>20+</dd></div>
-        </dl>
-                <p>I welcome enquiries from prospective Ph.D. and M.Tech. students interested in on-device AI, language models for domain question answering, healthcare AI or graph learning. Admissions follow the institute’s official process; a short note about your interests and background is a good start.</p>
+        <div class="body">
+          <dl class="facts">
+            <div><dt>Ph.D. thesis submitted</dt><dd>1</dd></div>
+            <div><dt>Ph.D. in progress</dt><dd>3</dd></div>
+            <div><dt>M.Tech. dissertations guided</dt><dd>6</dd></div>
+            <div><dt>B.Tech. projects guided</dt><dd>20+</dd></div>
+          </dl>
+          <p>I welcome enquiries from prospective Ph.D. and M.Tech. students interested in on-device AI, language models for domain question answering, healthcare AI or graph learning. Admissions follow the institute’s official process; a short note about your interests and background is a good start.</p>
+        </div>
       </section>
 
-      <!-- SERVICE -->
+      <section id="talks" class="block" aria-labelledby="h-talks">
+        <h2 id="h-talks">Invited talks</h2>
+        <div class="body">
+          <p>More than 70 invited, keynote and workshop sessions since 2010, on information retrieval, deep learning, federated learning, large language models and edge AI. Recent ones:</p>
+          <ol class="timeline"><li><span class="when">Jul 2026</span><span class="what"><strong>Foundations of distributed and federated learning; Advanced federated aggregation algorithms</strong><br><span class="meta">ISTE–BNY Knowledge Enhancement Programme, R.M.K. Engineering College, Chennai (May 2026)</span></span></li><li><span class="when">Mar 2026</span><span class="what"><strong>Federated learning</strong><br><span class="meta">5-day FDP, Madanapalle Institute of Technology & Science</span></span></li><li><span class="when">Feb 2026</span><span class="what"><strong>Model optimization and acceleration for EdgeAI</strong><br><span class="meta">Online FDP, Narsimha Reddy Engineering College, Hyderabad</span></span></li><li><span class="when">Jan 2026</span><span class="what"><strong>Open-source LLMs and knowledge grounding using RAG (2-day workshop)</strong><br><span class="meta">Sri Ramakrishna Engineering College, Coimbatore</span></span></li><li><span class="when">Jan 2026</span><span class="what"><strong>Generative AI for text using LLMs and RAG</strong><br><span class="meta">Chaitanya Bharathi Institute of Technology, Hyderabad</span></span></li><li><span class="when">Dec 2025</span><span class="what"><strong>Research proposal writing and funding opportunities</strong><br><span class="meta">Panimalar Engineering College, Chennai</span></span></li><li><span class="when">Oct 2025</span><span class="what"><strong>Applications of LLMs and retrieval-augmented generation</strong><br><span class="meta">IEEE seminar, Kongunadu College of Engineering & Technology, Trichy</span></span></li><li><span class="when">Sep 2025</span><span class="what"><strong>AI in medicine: predictive and descriptive models</strong><br><span class="meta">Online FDP, Rathinam Technical Campus, Coimbatore</span></span></li></ol>
+        </div>
+      </section>
+
       <section id="service" class="block" aria-labelledby="h-service">
-        <h2 id="h-service">Service and recognition</h2>
-        <ul class="plain">
-          <li>Senior Member of IEEE and Professional Member of ACM; life member of ISTE, IAENG, the Indian Bayesian Society and the Soft Computing Research Society.</li>
-          <li>More than 70 invited and keynote talks, and technical-programme committee and session-chair roles at national and international conferences.</li>
-          <li>Secretary, International Conference on Machine Intelligence for Research and Innovations (MAiTRI 2024), NIT Srinagar.</li>
-          <li>Convener of a five-day workshop on agri-robotics (2023) and coordinator of a five-day short-term course on computer vision and data skills (2026).</li>
-          <li>Set up an embedded systems laboratory in the Department of Computer Science and Engineering, NIT Srinagar.</li>
-          <li>Gold medal for first rank in the M.E. programme, Anna University; qualified UGC-NET (2012) and GATE.</li>
-        </ul>
+        <h2 id="h-service">Recognition and service</h2>
+        <div class="body">
+          <div class="grid-2">
+            <div><h3>Awards</h3><ul class="plain">
+              <li>Best paper awards: NEleX 2023, FICTA 2018, ICACCS 2015, ICONIAAC 2014, ICACCS 2013.</li>
+              <li>Gold medal for first rank in M.E. (CGPA 9.78), Anna University, 2009.</li>
+              <li>DST INSPIRE Fellowship (2011) and Senior Research Fellow-Professional.</li>
+              <li>GATE 2015, 2017, 2018; UGC-NET 2012.</li>
+              <li>ANRF International Travel Support grant for ICPR 2026, Lyon.</li></ul></div>
+            <div><h3>Service</h3><ul class="plain">
+              <li>Secretary, MAiTRI 2024, NIT Srinagar; convener of a five-day agri-robotics workshop (2023); coordinator of a five-day course on computer vision and data skills (2026).</li>
+              <li>Session chair at international conferences, including FICTA 2018 and IConDeepCom 2023.</li>
+              <li>Set up an embedded systems laboratory in CSE, NIT Srinagar.</li>
+              <li>Senior Member of IEEE; Professional Member of ACM; life member of ISTE, IAENG, Indian Bayesian Society and Soft Computing Research Society.</li></ul></div>
+          </div>
+        </div>
       </section>
 
-      <!-- EXPERIENCE -->
       <section id="experience" class="block" aria-labelledby="h-exp">
         <h2 id="h-exp">Experience and education</h2>
-        <ol class="timeline">
-          <li><span class="when">2026 to now</span><span class="what">Assistant Professor, Computer Science and Engineering, NITK Surathkal</span></li>
-          <li><span class="when">2021 to 2026</span><span class="what">Assistant Professor, Computer Science and Engineering, NIT Srinagar</span></li>
-          <li><span class="when">2020 to 2021</span><span class="what">Professor, Madanapalle Institute of Technology and Science</span></li>
-          <li><span class="when">2015 to 2020</span><span class="what">Associate Professor, Madanapalle Institute of Technology and Science</span></li>
-          <li><span class="when">2012 to 2015</span><span class="what">Junior and Senior Research Fellow (DST INSPIRE), Government College of Technology, Coimbatore</span></li>
-          <li><span class="when">2009 to 2011</span><span class="what">Lecturer, Karunya Institute of Technology and Sciences</span></li>
-        </ol>
-        <ul class="plain edu">
-          <li><strong>Ph.D.</strong>, Computer Science and Engineering, Anna University, Chennai (2016)</li>
-          <li><strong>M.E.</strong>, Computer Science and Engineering, Anna University, Coimbatore (2009)</li>
-          <li><strong>B.E.</strong>, Computer Science and Engineering, Anna University (2007)</li>
-        </ul>
+        <div class="body">
+          <div class="grid-2">
+            <ol class="timeline">
+              <li><span class="when">2026 to now</span><span class="what">Assistant Professor, CSE, NITK Surathkal</span></li>
+              <li><span class="when">2021 to 2026</span><span class="what">Assistant Professor, CSE, NIT Srinagar</span></li>
+              <li><span class="when">2020 to 2021</span><span class="what">Professor, CSE, Madanapalle Institute of Technology and Science</span></li>
+              <li><span class="when">2015 to 2020</span><span class="what">Associate Professor, CSE, Madanapalle Institute of Technology and Science</span></li>
+              <li><span class="when">2012 to 2015</span><span class="what">INSPIRE Fellow (JRF, then SRF-P), Government College of Technology, Coimbatore</span></li>
+              <li><span class="when">2009 to 2011</span><span class="what">Lecturer, CSE, Karunya University</span></li>
+            </ol>
+            <ol class="timeline">
+              <li><span class="when">2011 to 2015</span><span class="what"><strong>Ph.D.</strong>, Computer Science and Engineering, Anna University, Chennai<br><span class="meta">Personalized information retrieval using computational intelligence techniques</span></span></li>
+              <li><span class="when">2009</span><span class="what"><strong>M.E.</strong>, Computer Science and Engineering, Anna University, Coimbatore<br><span class="meta">CGPA 9.78, gold medal and first rank</span></span></li>
+              <li><span class="when">2007</span><span class="what"><strong>B.E.</strong>, Computer Science and Engineering, Karunya Institute of Technology and Science</span></li>
+            </ol>
+          </div>
+        </div>
       </section>
 
-      <!-- CONTACT -->
       <section id="contact" class="block" aria-labelledby="h-contact">
         <h2 id="h-contact">Contact</h2>
-        <address>
-          Dr. K. Veningston<br>
-          Department of Computer Science and Engineering<br>
-          National Institute of Technology Karnataka, Surathkal<br>
-          Mangaluru, Karnataka, India
-        </address>
-        <p id="email-line" hidden>Email: <a id="email-link"></a></p>
-        <noscript><p class="note">Enable JavaScript to see the email address.</p></noscript>
+        <div class="body">
+          <address>Dr. K. Veningston<br>Department of Computer Science and Engineering<br>National Institute of Technology Karnataka, Surathkal<br>Mangaluru, Karnataka, India</address>
+          <p id="email-line" hidden>Email: <a id="email-link"></a></p>
+        </div>
       </section>
 
-      <footer class="foot">
-        <p>© <span id="yr">2026</span> K. Veningston. Last updated November 2026.</p>
-      </footer>
+      <footer class="foot"><p>© <span id="yr">2026</span> K. Veningston. Last updated November 2026.</p></footer>
     </main>
   </div>
 
