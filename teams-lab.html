@@ -64,6 +64,88 @@
           <p class="hero-sub">A departmental research lab working on Edge AI and small/tiny AI models — spanning healthcare, environmental intelligence, and societal applications — with an emphasis on models deployable under tight memory, power, and connectivity constraints.</p>
           <p class="hero-cta"><a class="btn" href="internships.html">Internships</a> <a class="btn btn-ghost" href="index.html#contact">Contact</a></p>
         </div>
+          
+        <figure class="aerial">
+  <svg viewBox="0 0 640 380" role="img" aria-labelledby="lab-aerial-t lab-aerial-d" xmlns="http://www.w3.org/2000/svg">
+    <title id="lab-aerial-t">Illustration of TEAMS Lab's five research areas</title>
+    <desc id="lab-aerial-d">A hub-and-spoke diagram: a central TEAMS Lab node connects to five areas — Edge AI and TinyML, Verification and Validation, Societal Applications, Environmental Use Cases, and AI in Education.</desc>
+
+    <rect width="640" height="380" fill="var(--land)"/>
+
+    <!-- spokes -->
+    <g stroke="var(--box-label)" stroke-width="1.4" stroke-dasharray="3 6" opacity=".65" fill="none">
+      <path d="M320 190 L320 92"/>
+      <path d="M320 190 L462 140"/>
+      <path d="M320 190 L444 288"/>
+      <path d="M320 190 L196 288"/>
+      <path d="M320 190 L178 140"/>
+    </g>
+
+    <!-- hub -->
+    <g transform="translate(320,190)">
+      <circle r="48" fill="var(--box)" stroke="var(--shore)" stroke-width="2"/>
+      <text text-anchor="middle" y="-2" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="12.5" font-weight="700" fill="var(--paper)">TEAMS</text>
+      <text text-anchor="middle" y="14" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="9.5" fill="var(--paper)">Lab</text>
+    </g>
+
+    <!-- node: Edge AI / TinyML (top) -->
+    <g transform="translate(320,92)">
+      <circle r="40" fill="var(--paper)" stroke="var(--shore)" stroke-width="2"/>
+      <g stroke="var(--box-label)" stroke-width="1.6" fill="none">
+        <rect x="-13" y="-13" width="26" height="26" rx="3"/>
+        <path d="M-13 -6 h-7 M-13 2 h-7 M13 -6 h7 M13 2 h7 M-6 -13 v-7 M2 -13 v-7 M-6 13 v7 M2 13 v7"/>
+      </g>
+      <text text-anchor="middle" y="60" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">Edge AI &amp;</text>
+      <text text-anchor="middle" y="73" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">TinyML</text>
+    </g>
+
+    <!-- node: Verification &amp; Validation (upper right) -->
+    <g transform="translate(462,140)">
+      <circle r="40" fill="var(--paper)" stroke="var(--shore)" stroke-width="2"/>
+      <path d="M0 -15 L13 -9 V3 C13 11 7 17 0 20 C-7 17 -13 11 -13 3 V-9 Z" fill="none" stroke="var(--box-label)" stroke-width="1.6"/>
+      <path d="M-6 1 L-1 7 L7 -6" fill="none" stroke="var(--box-label)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text text-anchor="middle" y="60" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">Verification</text>
+      <text text-anchor="middle" y="73" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">&amp; Validation</text>
+    </g>
+
+    <!-- node: Societal Applications (lower right) -->
+    <g transform="translate(444,288)">
+      <circle r="40" fill="var(--paper)" stroke="var(--shore)" stroke-width="2"/>
+      <g fill="none" stroke="var(--box-label)" stroke-width="1.6">
+        <circle cx="-7" cy="-9" r="5.5"/>
+        <path d="M-16 11 C-16 1 -1 1 -1 11"/>
+        <circle cx="8" cy="-6" r="5.5"/>
+        <path d="M-1 13 C-1 4 15 4 15 13"/>
+      </g>
+      <text text-anchor="middle" y="60" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">Societal</text>
+      <text text-anchor="middle" y="73" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">Applications</text>
+    </g>
+
+    <!-- node: Environmental Use Cases (lower left) -->
+    <g transform="translate(196,288)">
+      <circle r="40" fill="var(--paper)" stroke="var(--shore)" stroke-width="2"/>
+      <path d="M0 -16 C14 -12 16 2 8 12 C0 20 -12 18 -14 6 C-16 -6 -8 -14 0 -16 Z" fill="none" stroke="var(--box-label)" stroke-width="1.6"/>
+      <path d="M0 -16 C-2 -4 -4 8 -14 15" fill="none" stroke="var(--box-label)" stroke-width="1.2"/>
+      <text text-anchor="middle" y="60" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">Environmental</text>
+      <text text-anchor="middle" y="73" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">Use Cases</text>
+    </g>
+
+    <!-- node: AI in Education (upper left) -->
+    <g transform="translate(178,140)">
+      <circle r="40" fill="var(--paper)" stroke="var(--shore)" stroke-width="2"/>
+      <g fill="none" stroke="var(--box-label)" stroke-width="1.6" stroke-linejoin="round">
+        <path d="M-16 -4 L0 -12 L16 -4 L0 4 Z"/>
+        <path d="M-8 0 V8 C-8 12 8 12 8 8 V0" />
+        <path d="M16 -4 V7" stroke-linecap="round"/>
+        <circle cx="16" cy="10" r="1.8" fill="var(--box-label)" stroke="none"/>
+      </g>
+      <text text-anchor="middle" y="60" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">AI in</text>
+      <text text-anchor="middle" y="73" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="600" fill="var(--box-label)">Education</text>
+    </g>
+  </svg>
+  <figcaption>The five research areas TEAMS Lab works across, radiating from the lab's core focus on tiny and edge AI.</figcaption>
+</figure>  
+
       </section>
 
       <section id="team" class="block" aria-labelledby="h-team">
