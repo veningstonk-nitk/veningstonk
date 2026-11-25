@@ -160,3 +160,28 @@ address{font-style:normal;margin-bottom:1rem}
 .kind{font:600 .72rem var(--sans);color:var(--teal);text-transform:none;border:1px solid var(--line);border-radius:99px;padding:.05rem .5rem;margin-right:.35rem;white-space:nowrap}
 .talks .what{display:block}
 button.btn{cursor:pointer}
+
+
+.nav .nav-new {
+  color: var(--box);
+  font-weight: 700;
+}
+
+.badge-new {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #fff;
+  background: #d9534f;
+  border-radius: 999px;
+  vertical-align: middle;
+  animation: flash-new 1.2s ease-in-out infinite;
+}
+
+@keyframes flash-new {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .25; }
+}
